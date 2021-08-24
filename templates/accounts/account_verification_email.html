@@ -1,0 +1,13 @@
+{% autoescape off %}
+
+Hello {{ user.first_name}},
+
+Thank you for registering an account with Fashion Castle
+
+Please click on the link below to activate your user account
+
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+If you believe that you received this message in error, please ignore this email.
+
+{% endautoescape %}
