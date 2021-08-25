@@ -30,6 +30,7 @@ class RegistrationForm(forms.ModelForm):
         password = cleaned_data.get('password')
         confirm_password = cleaned_data.get('confirm_password')
         password_length = len(password)
+        
 
         if password != confirm_password:
             raise forms.ValidationError(
@@ -39,4 +40,3 @@ class RegistrationForm(forms.ModelForm):
             raise forms.ValidationError(
                 "Passwords must be 8 characters or more"
             )
-    
