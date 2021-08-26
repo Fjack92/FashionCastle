@@ -17,6 +17,14 @@
                         </div> <!-- img-big-wrap.// -->
 
                     </article> <!-- gallery-wrap .end// -->
+                    <ul class="thumb">
+                        <li>
+                            <a href="{{single_product.images.url}}" target="mainImage"><img src="{{single_product.images.url}}" alt="Product Image"></a>
+                            {% for i in product_gallery %}
+                            <a href="{{i.image.url}}" target="mainImage"><img src="{{i.image.url}}" alt="Product Image"></a>
+                            {% endfor %}
+                        </li>
+                    </ul>
                 </aside>
                 <main class="col-md-6 border-left">
 
@@ -139,8 +147,7 @@
                         <p>You must purchase this product to post a review!</p>
                         {% endif %}
                         {% else %}
-                        <p>You must be logged in to post a review! <span><a href="{% url 'login' %}">Login
-                                    now</a></span></p>
+                        <p>You must be logged in to post a review! <span><a href="{% url 'login' %}">Login Now</a></span></p>
                         {% endif %}
                         <!-- For testing... -->
                         <!-- {% if user.is_authenticated %}

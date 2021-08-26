@@ -17,3 +17,13 @@
 		</section>
 	</div><!-- //container -->
 </footer>
+<script>
+	$(document).ready(function() {
+		$('.thumb a').click(function(e){
+			e.preventDefault(); //prevents opening image in new tab
+			$('.mainImage img').attr('src', $(this).attr("href")); //changes main image to what you clicked
+		})
+	})
+</script>
+</body>
+</html>
