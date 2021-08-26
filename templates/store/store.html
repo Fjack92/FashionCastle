@@ -144,8 +144,30 @@
                                         <span class="price">${{ product.price }}</span>
                                     </div> <!-- price-wrap.// -->
                                 </div>
+                                {% if product.averageReview == 0 %}
+                                {%else%}
+                                <div class="rating-star pb-10 mb-10">
+
+                                    <span>
+                                        <i class="fa fa-star{% if product.averageReview < 0.5 %}-o{% elif product.averageReview >= 0.5 and product.averageReview < 1 %}-half-o {% endif %}"
+                                            aria-hidden="true"></i>
+                                        <i class="fa fa-star{% if product.averageReview < 1.5 %}-o{% elif product.averageReview >= 1.5 and product.averageReview < 2 %}-half-o {% endif %}"
+                                            aria-hidden="true"></i>
+                                        <i class="fa fa-star{% if product.averageReview < 2.5 %}-o{% elif product.averageReview >= 2.5 and product.averageReview < 3 %}-half-o {% endif %}"
+                                            aria-hidden="true"></i>
+                                        <i class="fa fa-star{% if product.averageReview < 3.5 %}-o{% elif product.averageReview >= 3.5 and product.averageReview < 4 %}-half-o {% endif %}"
+                                            aria-hidden="true"></i>
+                                        <i class="fa fa-star{% if product.averageReview < 4.5 %}-o{% elif product.averageReview >= 4.5 and product.averageReview < 5 %}-half-o {% endif %}"
+                                            aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <br>
+                                {% endif %}
                                 <a href="{{ product.get_url }}" class="btn btn-block btn-primary">View Details</a>
+
+                                
                             </figcaption>
+                            
                         </figure>
                     </div> <!-- col.// -->
                     {% endfor%}
