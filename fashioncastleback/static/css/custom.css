@@ -89,22 +89,20 @@
   --color: red;
   --hover: #ff6a00;
 }
-
-#custom-btn {
-  color: var(--color);
-  transition: 0.25s;
-}
 #custom-btn:hover, #custom-btn:focus {
   border-color: var(--hover);
   color: #fff;
 }
 
 #custom-btn {
+  color: var(--color);
+  transition: 0.25s;
+  border-radius: 20%;
   background: none;
   border: 2px solid;
   font: inherit;
   line-height: 1;
   margin: 0.5em;
-  padding: 1em 2em;
+  padding: 1em 1em;
 }
 
