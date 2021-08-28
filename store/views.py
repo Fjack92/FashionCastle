@@ -71,6 +71,10 @@ def product_detail(request, category_slug,  product_slug):
     return render(request, 'store/product_detail.html', context)
 
     
+    
+
+
+    
 
 
 def search(request):
