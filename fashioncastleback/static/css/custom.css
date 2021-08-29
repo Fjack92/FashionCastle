@@ -113,6 +113,11 @@ ul.thumb li img {
   padding: .7em .7em;
 }
 
+.clear-container {
+  padding: 25px;
+  text-align: center;
+}
+
 /* store button */
 
 .store:hover,
@@ -123,10 +128,11 @@ ul.thumb li img {
 .store {
   --color: rgba(0, 68, 255, 0.979);
   --hover: #3167eb;
+  --border:#3167eb; 
 }
 #custom-btn-store:hover,
 #custom-btn-store:focus {
-  border-color: var(--hover);
+  border-color: var(--border);
   color: #fff;
 }
 
@@ -134,7 +140,7 @@ ul.thumb li img {
   text-align: center;
   margin: 0;
   color: var(--color);
-  transition: 0.25s;
+  transition: 0.55s;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -152,6 +158,7 @@ ul.thumb li img {
 }
 
 /* login button */
+
 .log {
   --color: #317ceb;
   --hover: rgb(0, 68, 255);
@@ -175,6 +182,7 @@ ul.thumb li img {
 
 
 /* save button */
+
 .save {
   --color: #317ceb;
   --hover: rgb(0, 68, 255);
@@ -198,6 +206,7 @@ ul.thumb li img {
 }
 
 /* submit button */
+
 .submit {
   --color: #317ceb;
   --hover: rgb(0, 68, 255);
@@ -221,6 +230,7 @@ ul.thumb li img {
 }
 
 /* continue-shopping button */
+
 .continue-shopping {
   --color: #317ceb;
   --hover: rgb(0, 68, 255);
@@ -244,6 +254,7 @@ ul.thumb li img {
 }
 
 /* all-products button */
+
 .all-products{
   --color: #317ceb;
   --hover: rgb(0, 68, 255);
@@ -275,7 +286,6 @@ ul.thumb li img {
   --border:#3167eb; 
 
 }
-
 .view-details{
   text-align: center;
   color: white;
@@ -298,9 +308,7 @@ ul.thumb li img {
   --color: #317ceb;
   --hover: rgb(0, 68, 255);
   --border:#3167eb; 
-
 }
-
 .apply{
   text-align: center;
   color: white;
@@ -323,9 +331,7 @@ ul.thumb li img {
   --color: #317ceb;
   --hover: rgb(0, 68, 255);
   --border:#3167eb; 
-
 }
-
 .add-cart{
   text-align: center;
   color: white;
@@ -352,9 +358,7 @@ ul.thumb li img {
   --color: #317ceb;
   --hover: rgb(0, 68, 255);
   --border:#3167eb; 
-
 }
-
 .checkout{
   text-align: center;
   color: white;
@@ -377,9 +381,7 @@ ul.thumb li img {
   --color: white;
   --hover: rgb(0, 68, 255);
   --border:#3167eb; 
-
 }
-
 .continue-shopping{
   text-align: center;
   color: black;
