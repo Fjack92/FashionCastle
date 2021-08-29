@@ -73,11 +73,11 @@ ul.thumb li img {
     bottom: 150px;
     left: 110px;
   }
-  #custom-btn-close {
-    display: none;
+  #custom-btn-clear {
+    display: none !important;
   }
-  #custom-btn-store {
-    display: none;
+  .store-parent {
+    margin-bottom: 10px;
   }
 }
 
@@ -101,7 +101,7 @@ ul.thumb li img {
 
 #custom-btn-clear {
   color: var(--color);
-  transition: 0.25s;
+  transition: 0.5s;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -111,10 +111,10 @@ ul.thumb li img {
   line-height: 1;
   margin: 0.5em;
   padding: .7em .7em;
+  position: absolute;
 }
 
 .clear-container {
-  padding: 25px;
   text-align: center;
 }
 
@@ -124,7 +124,6 @@ ul.thumb li img {
 .store:focus {
   box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
 }
-
 .store {
   --color: rgba(0, 68, 255, 0.979);
   --hover: #3167eb;
@@ -148,7 +147,7 @@ ul.thumb li img {
   border: 2px solid;
   font: inherit;
   line-height: 1;
-  margin: 0.5em;
+  margin: 0.9em;
   padding: .6em;
   height: 10px;
 }
@@ -233,7 +232,7 @@ ul.thumb li img {
 
 .continue-shopping {
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: #317ceb;
   --border:#3167eb; 
 
 }
@@ -260,6 +259,14 @@ ul.thumb li img {
   --hover: rgb(0, 68, 255);
   --border:#3167eb; 
 
+}
+@media only screen and (max-width: 600px) {
+  .all-products {
+    position: absolute;
+    left: 250px;
+    bottom: 0;
+    width: 30% !important;
+  }
 }
 
 .all-products{
@@ -375,12 +382,12 @@ ul.thumb li img {
   background-color: var(--hover);
 }
 
-/* checkout button */
+/* continue-shopping button */
 
 .continue-shopping{
   --color: white;
-  --hover: rgb(0, 68, 255);
-  --border:#3167eb; 
+  --hover: #3167eb;
+  --border:#3172eb; 
 }
 .continue-shopping{
   text-align: center;
@@ -392,6 +399,29 @@ ul.thumb li img {
   border-radius: 10px;
 }
 .continue-shopping:hover {
+  transition-duration: .5s;
+  color: white;
+  box-shadow: 0 0 10px var(--hover);
+  background-color: var(--hover);
+}
+
+/* categories button */
+
+.categories{
+  --color: #317ceb;
+  --hover: rgb(0, 68, 255);
+  --border:#3167eb; 
+}
+.categories{
+  text-align: center;
+  color: white;
+  background-color: var(--color);
+  border: 1px solid var(--border);
+  width: 100%;
+  padding: .6rem;
+  border-radius: 10px;
+}
+.categories:hover {
   transition-duration: .5s;
   color: white;
   box-shadow: 0 0 10px var(--color);
