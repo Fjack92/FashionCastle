@@ -63,6 +63,7 @@ ul.thumb li img {
   border: 1px solid grey;
 }
 
+
 @media only screen and (max-width: 600px) {
   .store-button {
     padding-left: 15px;
@@ -80,7 +81,8 @@ ul.thumb li img {
   }
 }
 
-/* close button */
+/* clear button */
+
 
 .close:hover,
 .close:focus {
@@ -334,6 +336,60 @@ ul.thumb li img {
   border-radius: 10px;
 }
 .add-cart:hover {
+  transition-duration: .5s;
+  color: white;
+  box-shadow: 0 0 10px var(--color);
+  background-color: var(--hover);
+}
+
+.shopping-container {
+  text-align: center;
+}
+
+/* checkout button */
+
+.checkout{
+  --color: #317ceb;
+  --hover: rgb(0, 68, 255);
+  --border:#3167eb; 
+
+}
+
+.checkout{
+  text-align: center;
+  color: white;
+  background-color: var(--color);
+  border: 1px solid var(--border);
+  width: 100%;
+  padding: .6rem;
+  border-radius: 10px;
+}
+.checkout:hover {
+  transition-duration: .5s;
+  color: white;
+  box-shadow: 0 0 10px var(--color);
+  background-color: var(--hover);
+}
+
+/* checkout button */
+
+.continue-shopping{
+  --color: white;
+  --hover: rgb(0, 68, 255);
+  --border:#3167eb; 
+
+}
+
+.continue-shopping{
+  text-align: center;
+  color: black;
+  background-color: var(--color);
+  border: 1px solid var(--border);
+  width: 100%;
+  padding: .6rem;
+  border-radius: 10px;
+}
+.continue-shopping:hover {
   transition-duration: .5s;
   color: white;
   box-shadow: 0 0 10px var(--color);
