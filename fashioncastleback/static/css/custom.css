@@ -84,22 +84,22 @@ ul.thumb li img {
 /* clear button */
 
 
-.close:hover,
-.close:focus {
+.clear:hover,
+.clear:focus {
   box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
 }
 
-.close {
+.clear {
   --color: red;
   --hover: #ff3300;
 }
-#custom-btn-close:hover,
-#custom-btn-close:focus {
+#custom-btn-clear:hover,
+#custom-btn-clear:focus {
   border-color: var(--hover);
   color: #fff;
 }
 
-#custom-btn-close {
+#custom-btn-clear {
   color: var(--color);
   transition: 0.25s;
   -webkit-border-radius: 10px;
@@ -110,7 +110,7 @@ ul.thumb li img {
   font: inherit;
   line-height: 1;
   margin: 0.5em;
-  padding: 1em 1em;
+  padding: .7em .7em;
 }
 
 /* store button */
