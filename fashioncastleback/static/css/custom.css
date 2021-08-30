@@ -148,7 +148,7 @@ ul.thumb li img {
   font: inherit;
   line-height: 1;
   margin: 0.9em;
-  padding: .6em;
+  padding: .75em;
   height: 10px;
 }
 
@@ -160,7 +160,7 @@ ul.thumb li img {
 
 .log {
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: rgb(0, 110, 255);
   --border:#3167eb; 
 
 }
@@ -184,7 +184,7 @@ ul.thumb li img {
 
 .save {
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: rgb(0, 110, 255);
   --border:#3167eb; 
 
 }
@@ -208,7 +208,7 @@ ul.thumb li img {
 
 .submit {
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: rgb(0, 110, 255);
   --border:#3167eb; 
 
 }
@@ -256,7 +256,7 @@ ul.thumb li img {
 
 .all-products{
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: rgb(0, 110, 255);
   --border:#3167eb; 
 
 }
@@ -289,7 +289,7 @@ ul.thumb li img {
 
 .view-details{
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: rgb(0, 110, 255);
   --border:#3167eb; 
 
 }
@@ -313,7 +313,7 @@ ul.thumb li img {
 
 .apply{
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: rgb(0, 110, 255);
   --border:#3167eb; 
 }
 .apply{
@@ -336,7 +336,7 @@ ul.thumb li img {
 
 .add-cart{
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: rgb(0, 110, 255);
   --border:#3167eb; 
 }
 .add-cart{
@@ -363,7 +363,7 @@ ul.thumb li img {
 
 .checkout{
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: rgb(0, 110, 255);
   --border:#3167eb; 
 }
 .checkout{
@@ -409,7 +409,7 @@ ul.thumb li img {
 
 .categories{
   --color: #317ceb;
-  --hover: rgb(0, 68, 255);
+  --hover: rgb(0, 110, 255);
   --border:#3167eb; 
 }
 .categories{
@@ -427,3 +427,16 @@ ul.thumb li img {
   box-shadow: 0 0 10px var(--color);
   background-color: var(--hover);
 }
+
+/* custom cart button */
+
+.fa-grow:hover {
+  animation: grow 1.5s;
+}
+
+
+
+@-moz-keyframes grow { 100% { -moz-transform: scale(1.1); } }
+@-webkit-keyframes grow { 100% { -webkit-transform: scale(1.1); } }
+@keyframes grow { 100% { -webkit-transform: scale(1.1); transform:scale(1.1); } }
+
