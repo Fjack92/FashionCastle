@@ -1,3 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Dancing+Script&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&display=swap');
+/* start fonts */
+:root {
+  --sans-serif: 'Merriweather Sans', sans-serif;
+  --script-font: 'Dancing Script', cursive;
+  --button-color-blue: #317ceb;
+  --button-color-hover: rgb(0, 110, 255);
+}
+
+.review-script {
+  font-size: 3em;
+}
+
+li, a, button {
+  font-family: var(--script-font);
+}
+h2, h5{
+  font-family: var(--script-font);
+}
+p, label, h6  {
+  font-family: var(--sans-serif);
+
+}
+.title {
+  font-family: var(--sans-serif);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+.price {
+  font-family: var(--script-font);
+}
+.form-inline {
+  font-family: var(--sans-serif);
+  font-size: 3rem;
+}
+.header-main {
+  font-family: var(--sans-serif);
+}
+#nav-drop {
+  font-family: var(--sans-serif);
+
+}
+
+.section-title {
+  font-size: 3.5em;
+  font-family: var(--script-font);
+  font-weight: 200;
+}
+
+/* end fonts */
+
+/* #product-img {
+  border: 2px solid black;
+} */
+
 /* Hide Radio button */
 .rate > input {
   display: none;
@@ -125,8 +181,8 @@ ul.thumb li img {
   box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
 }
 .store {
-  --color: rgba(0, 68, 255, 0.979);
-  --hover: #3167eb;
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
 }
 #custom-btn-store:hover,
@@ -136,6 +192,7 @@ ul.thumb li img {
 }
 
 #custom-btn-store {
+  font-family: var(--sans-serif);
   text-align: center;
   margin: 0;
   color: var(--color);
@@ -159,8 +216,8 @@ ul.thumb li img {
 /* login button */
 
 .log {
-  --color: #317ceb;
-  --hover: rgb(0, 110, 255);
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
 
 }
@@ -183,8 +240,8 @@ ul.thumb li img {
 /* save button */
 
 .save {
-  --color: #317ceb;
-  --hover: rgb(0, 110, 255);
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
 
 }
@@ -207,8 +264,8 @@ ul.thumb li img {
 /* submit button */
 
 .submit {
-  --color: #317ceb;
-  --hover: rgb(0, 110, 255);
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
 
 }
@@ -231,8 +288,8 @@ ul.thumb li img {
 /* continue-shopping button */
 
 .continue-shopping {
-  --color: #317ceb;
-  --hover: #317ceb;
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-blue);
   --border:#3167eb; 
 
 }
@@ -255,8 +312,8 @@ ul.thumb li img {
 /* all-products button */
 
 .all-products{
-  --color: #317ceb;
-  --hover: rgb(0, 110, 255);
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
 
 }
@@ -288,8 +345,8 @@ ul.thumb li img {
 /* view-details button */
 
 .view-details{
-  --color: #317ceb;
-  --hover: rgb(0, 110, 255);
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
 
 }
@@ -312,8 +369,8 @@ ul.thumb li img {
 /* apply button */
 
 .apply{
-  --color: #317ceb;
-  --hover: rgb(0, 110, 255);
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
 }
 .apply{
@@ -335,9 +392,10 @@ ul.thumb li img {
 /* add-cart button */
 
 .add-cart{
-  --color: #317ceb;
-  --hover: rgb(0, 110, 255);
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
+  font-size: 20px;
 }
 .add-cart{
   text-align: center;
@@ -362,8 +420,8 @@ ul.thumb li img {
 /* checkout button */
 
 .checkout{
-  --color: #317ceb;
-  --hover: rgb(0, 110, 255);
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
 }
 .checkout{
@@ -386,7 +444,7 @@ ul.thumb li img {
 
 .continue-shopping{
   --color: white;
-  --hover: #3167eb;
+  --hover: var(--button-color-hover);
   --border:#3172eb; 
 }
 .continue-shopping{
@@ -408,11 +466,12 @@ ul.thumb li img {
 /* categories button */
 
 .categories{
-  --color: #317ceb;
-  --hover: rgb(0, 110, 255);
+  --color: var(--button-color-blue);
+  --hover: var(--button-color-hover);
   --border:#3167eb; 
 }
 .categories{
+  font-family: var(--sans-serif);
   text-align: center;
   color: white;
   background-color: var(--color);
@@ -427,16 +486,6 @@ ul.thumb li img {
   box-shadow: 0 0 10px var(--color);
   background-color: var(--hover);
 }
-
-/* custom cart button */
-
-.fa-grow:hover {
-  animation: grow 1.5s;
+#dashboard, #log-out {
+  font-family: var(--sans-serif);
 }
-
-
-
-@-moz-keyframes grow { 100% { -moz-transform: scale(1.1); } }
-@-webkit-keyframes grow { 100% { -webkit-transform: scale(1.1); } }
-@keyframes grow { 100% { -webkit-transform: scale(1.1); transform:scale(1.1); } }
-

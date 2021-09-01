@@ -26,7 +26,15 @@ urlpatterns = [
     path('store/', include('store.urls')),
     path('cart/', include('carts.urls')),
     path('accounts/', include('accounts.urls')),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
+
 
     #ORDERS
     path('orders/', include('orders.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+admin.site.site_header = 'Fashion Castle Admin'
+admin.site.site_title = 'Fashion Castle'
+

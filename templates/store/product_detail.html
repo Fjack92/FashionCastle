@@ -32,6 +32,7 @@
                         {% csrf_token %}
                         <article class="content-body">
                             {% if single_product.countReview == 0%}
+                            <h2 class="title">{{ single_product.product_name }}</h2>
                             {% else %}
                             <h2 class="title">{{ single_product.product_name }}</h2>
                             <div class="rating-star">
@@ -46,7 +47,11 @@
                                         aria-hidden="true"></i>
                                     <i class="fa fa-star{% if single_product.averageReview < 4.5 %}-o{% elif single_product.averageReview >= 4.5 and single_product.averageReview < 5 %}-half-o {% endif %}"
                                         aria-hidden="true"></i>
+                                        {% if single_product.countReview == 1 %}
+                                    <span>{{single_product.countReview}} review</span>
+                                    {% else %}
                                     <span>{{single_product.countReview}} reviews</span>
+                                        {% endif %}
                                 </span>
                             </div>
                             {% endif %}
@@ -71,6 +76,7 @@
                                         </option>
                                         {% endfor %}
                                     </select>
+                                    <br>
                                     <h6>Choose Size</h6>
                                     <select name="size" class="form-control" required>
                                         <option value="" disabled selected>Select</option>
@@ -106,7 +112,7 @@
 
                 <form action="{% url 'submit_review' single_product.id %}" method="POST">
                     {% csrf_token %}
-                    <h5>Write Your Review</h5>
+                    <h5 class="review-script">Write Your Review</h5>
 
                     <div>
                         <!-- Rating stars -->
@@ -176,7 +182,11 @@
                                 aria-hidden="true"></i>
                             <i class="fa fa-star{% if single_product.averageReview < 4.5 %}-o{% elif single_product.averageReview >= 4.5 and single_product.averageReview < 5 %}-half-o {% endif %}"
                                 aria-hidden="true"></i>
+                                {% if single_product.countReview == 1 %}
+                            <span>{{single_product.countReview}} review</span>
+                            {% else %}
                             <span>{{single_product.countReview}} reviews</span>
+                            {% endif %}
                         </span>
                     </div>
 
